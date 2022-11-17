@@ -1,0 +1,198 @@
+# Site
+repository: cherdag/cv
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Aleksandr Cherkashin
+title: DevOps engineer
+email: as@cherkashin.org
+# website: www.github.com/sproogen/resume-theme
+
+# Dark Mode (true/false/never)
+darkmode: never
+
+# Social links
+# twitter_username: facespics
+github_username:  cherdag
+# stackoverflow_username: "00000001"
+# dribbble_username: jekyll
+# facebook_username: jekyll
+# flickr_username: jekyll
+# instagram_username: jameswgrant
+linkedin_username: alex-cherkashin
+# xing_username: jekyll
+# pinterest_username: jekyll
+# youtube_username: globalmtb
+# googleplus_username: +jekyll
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+- title: Telegram
+  icon: fab fa-telegram
+  url: https://t.me/cherdag
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  I am an experienced network engineer and system administrator with 10+ years of IT background. 
+  I am currently completing an advanced long-term training course for a DevOps engineer. I am going to develop my career in the DevOps 
+  direction.
+
+  I get most of my key skills working in Moscow, and now it looks that it's a right moment to me to step out of the boundaries and to pursue my dream to live and work in Europe.
+  
+  I have extensive experience in administering both <mark>Linux</mark> and Windows servers. I am also well versed in networks and network
+  equipment (VPN, routing, OSPF, TCP / IP), I have worked and have experience in implementing version control systems and CI/CD (<mark>GitLab</mark>, <mark>Jenkins</mark>), 
+  containerization and orchestration systems (<mark>Docker</mark>, <mark>Docker-compose</mark>, <mark>Kubernetes</mark>, <mark>ArgoCD</mark>), 
+  as well as monitoring and alerting systems (<mark>Zabbix</mark>, <mark>Nagios</mark>, <mark>Cacti</mark>, <mark>Grafana</mark>, 
+  <mark>Prometheus</mark>).
+  
+  My advanced IT experience is enriched by my economics education and high communication skills, 
+  which helps me to understand the business processes and needs and create and implement optimized solutions for the business, 
+  the team, and customers. I managed to cope with stressful situations. 
+  Usually, I don't tend to give up in front of difficulties. Instead I try to gain new learnings from failures to improve the processes and my expertise. 
+  I am a fan of cohesive teamwork. People could rely on me.
+  
+  I am a curious explorer and fast learner, trying to develop my hard and soft skills. 
+  By the way, I like motorcycling, traveling, and scale modeling. 
+
+  
+
+
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: top-middle
+        title: Yandex.Practicum DevOps learning project (online-shop)
+        # link: github.com/sproogen
+        # link_text: Project Website
+        # additional_links:
+        #   - title:  sproogen/modern-resume-theme
+        #     icon: fab fa-github
+        #     url: github.com/sproogen/modern-resume-theme
+        # quote: >
+        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        description: | # this will include new lines to allow paragraphs
+          **Project description:**
+          
+          - developing a deployment strategy and ensuring scalability and fault tolerance for an online store.
+          
+          **Tasks:**
+          
+          - Organization of <mark>CI/CD</mark> processes in the development and deployment of the application (<mark>GitLab CI</mark>)
+          - Providing fault tolerance when updating and deploying the application (<mark>Kubernetes</mark>, <mark>ArgoCD</mark>)
+          - Ensuring scalability depending on current load (vertical and horizontal scaling using Kubernetes: horizontal/vertical pod autoscaler)
+          - Automation of deployment and application deployment processes (<mark>Gitlab CI</mark> + <mark>Nexus</mark> + <mark>ArgoCD</mark>)
+          - Organization and configuration of the application and infrastructure monitoring (<mark>Loki</mark>, <mark>Prometheus</mark>, <mark>Grafana</mark>)
+          
+          **Key results:**
+          
+          - The original version of the online store application was redesigned to use microservice architecture
+          - Developed a strategy for automating application deployment using containerization and deployment in a Kubernetes cloud cluster
+          - Developed and implemented an application update strategy (blue-green deployment), which ensured continuity of work when updating the version of application components
+  
+  - title: Experience # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Metallservis
+        link: https://mc.ru
+        sub_title: Senior Network Engineer / Deputy Head of Infrastructure Department
+        caption: April 2013 - Present
+        description: | # this will include new lines to allow paragraphs 
+          **Projects:**
+          
+          - Standardization of the software used on internal routing servers and automation of their deployment 
+          (<mark>OpenVPN</mark>, <mark>OSPF</mark>)
+          - Organization of remote access for employees (<mark>Linux</mark>, <mark>MS Remote Desktop</mark>)
+          - Deployment of an integrated monitoring system for network equipment (<mark>Zabbix</mark> + <mark>LibreNMS</mark>)
+          - Infrastructure planning and development
+          
+          **Key results:**
+          
+          - Completely redesigned OS distribution and system software for use as branch office internal routing servers (
+          migration to <mark>Ubuntu</mark>. Key software: <mark>OpenVPN</mark>, <mark>Quagga (OSPF)</mark>). 
+          OS installation automation was developed to speed up the deployment of new servers using <mark>Cloud-init</mark> and <mark>Ansible</mark>, which simplified the work of field engineers.
+          - Implemented a unified monitoring system for network equipment (<mark>Zabbix</mark>)
+          - Based on <mark>Python</mark> scripts, automation of managing remote access users was written, 
+          which reduced the time for executing requests for access to 2-3 minutes per request (regardless of the number of users)
+          - As a Senior Network Engineer the following results have been archieved:
+              - Successfully implemented the HP IMC network equipment management system, 
+              which made it possible to automate backup, monitoring, and network management (more than 250 units of active network equipment)
+              - Designed and successfully implemented seamless WiFi networks with a single control 
+              center in the office and warehouses of the company (more than 50,000 sq.m.) based on <mark>Cambium</mark> + <mark>cnMaestro</mark> on-premises equipment
+              - Developed network equipment standards and regulations (<mark>HPE/Aruba</mark> Networks)
+              - Developed standards for equipment used for video surveillance and access control systems
+
+
+      - layout: left
+        title: StarLines
+        link: https://starlines.ru/
+        sub_title: Senior System Administrator
+        caption: January 2009 - August 2012
+        description: | 
+          **Projects:**
+          
+          - Migrating the infrastructure of the company's clients to the Unix platform (<mark>FreeBSD</mark>)
+          - Implementation of IP telephony based on <mark>Asterisk</mark>
+          - Implementation of an internal service for working with user requests
+          
+          **Key results:**
+          
+          - A system of thin clients has been introduced to replace full-fledged PCs (Diskless stations + <mark>FreeBSD</mark> TFTP server + MS Windows Server Terminal Services). 
+          Including the functioning of EDS and peripheral equipment.
+          - Cacti monitoring system for <mark>Cisco</mark> networking equipment was implemented for the "Russia" Special Flight Squad.
+
+
+  - title: Education # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Moscow Engineering Physics Institute (MEPhI)
+        caption: 2001 - 2005
+        sub_title: Mathematical Analysis of Operations in the Economy
+        description: | # this will include new lines to allow paragraphs
+          During my time at MEPhI I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. 
+
+          Though it might seem that studying economics may not be helpful in my job, it always helped me to better understand the core buisiness needs. I'm proud of always being able to find a way to speak with stakeholders and financial departments in their language, making my work understable to them.
+      
+      - layout: left
+        title: Yandex.Practicum
+        caption: 2022
+        sub_title: DevOps professional
+        description: |
+          The extensive learning course for an experienced System Administrators and Software engineers who seek to dive deep into the DevOps culture and learn from the best professionals, based on one of the largest Russian IT companies (Yandex).
+
+          This course was so much fun and bring lots of hands-on experience with the top notch technologies. During my time there I fell in love with the DevOps mindset and culture.
+
+  - title: A Little More About Me
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Alongside my interests in networks, Linux and DevOps I find myself passionate about:
+      - Motorcycles
+      - Traveling (preferably on motorcycle)
+      - Photography 
+      - Scale modelling - love building models of sport cars and motorcycles (again). [Check this one for example](http://autoinscale.com/?section=article&id=1490)
+
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
