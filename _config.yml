@@ -72,15 +72,18 @@ content:
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
-        title: Yandex.Practicum DevOps learning project (online-shop)
-        # link: github.com/sproogen
-        # link_text: Project Website
-        # additional_links:
-        #   - title:  sproogen/modern-resume-theme
-        #     icon: fab fa-github
-        #     url: github.com/sproogen/modern-resume-theme
-        # quote: >
-        #   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+        title: Yandex.Practicum DevOps diploma project (online-shop)
+        link: https://momo.cherkashin.org
+        link_text: Momo Store 
+        additional_links:
+          - title:  Main repository
+            icon: fab fa-github
+            url: github.com/cherdag/momo-store
+          - title: Infrastructure repository
+            icon: fab fa-github
+            url: github.com/cherdag/momo-infrastructure
+        quote: >
+          The implementation project is competent and meets the requirements, one of the best solutions for the group.
         description: | # this will include new lines to allow paragraphs
           **Project description:**
           
@@ -88,7 +91,7 @@ content:
           
           **Tasks:**
           
-          - Organization of <mark>CI/CD</mark> processes in the development and deployment of the application (<mark>GitLab CI</mark>)
+          - Organization of <mark>CI/CD</mark> processes in the development and deployment of the application (<mark>GitLab CI</mark> multi-project pipelines)
           - Providing fault tolerance when updating and deploying the application (<mark>Kubernetes</mark>, <mark>ArgoCD</mark>)
           - Ensuring scalability depending on current load (vertical and horizontal scaling using Kubernetes: horizontal/vertical pod autoscaler)
           - Automation of deployment and application deployment processes (<mark>Gitlab CI</mark> + <mark>Nexus</mark> + <mark>ArgoCD</mark>)
@@ -97,8 +100,8 @@ content:
           **Key results:**
           
           - The original version of the online store application was redesigned to use microservice architecture
-          - Developed a strategy for automating application deployment using containerization and deployment in a Kubernetes cloud cluster
-          - Developed and implemented an application update strategy (blue-green deployment), which ensured continuity of work when updating the version of application components
+          - Developed a strategy for automating application deployment to different environments (stage/prod) using containerization and deployment in a <mark>Kubernetes</mark> cloud cluster
+          - Implemented an application update strategy (blue-green deployment), which ensured continuity of work when updating the version of application components
   
   - title: Experience # Title for the section
     layout: list # Type of content section (list/text)
